@@ -25,7 +25,12 @@ const Details = () => {
 					<Data>
 						<div className="title">{info.name}</div>
 						<div className="lang">Languages : {info.language}</div>
+						<div className="lang">Premiered On : {info.premiered}</div>
 						<div className="len">Length : {info.runtime} min</div>
+						<div className="len">
+							Rating : {!info?.rating?.average ? 0 : info.rating?.average} ⭐
+						</div>
+						<div className="len">Official Website : {info?.network?.name} </div>
 						<div className="book">
 							<NavLink to={`/booking/${params.id}`}>
 								<button>Book Tickets</button>
@@ -79,7 +84,7 @@ const Data = styled.div`
 	height: 100%;
 	display: flex;
 	flex-direction: column;
-	gap: 2rem;
+	gap: 1rem;
 	padding-top: 5rem;
 	align-items: left;
 
@@ -89,7 +94,7 @@ const Data = styled.div`
 	.lang,
 	.len,
 	.genre {
-		font-size: 1.5rem;
+		font-size: 1.2rem;
 	}
 	button {
 		width: 15vw;
