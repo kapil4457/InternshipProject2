@@ -63,4 +63,10 @@ const Container = styled.div`
 			background-color: rgba(46, 204, 113);
 		}
 	}
+
+	@media all and (max-width: 800px) {
+		height: 90%;
+		align-self: center;
+		justify-self: center;
+	}
 `;

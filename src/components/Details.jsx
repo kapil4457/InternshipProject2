@@ -64,7 +64,8 @@ const Container = styled.div`
 const First = styled.div`
 	display: flex;
 	width: 100%;
-	height: 90vh;
+	height: 100%;
+
 	.image {
 		width: 50%;
 		display: flex;
@@ -77,6 +78,13 @@ const First = styled.div`
 		border-radius: 4px;
 		box-shadow: 0.2pc 0.2pc 0.3pc gray;
 		height: 80%;
+	}
+	@media all and (max-width: 800px) {
+		flex-direction: column;
+		.image {
+			margin-top: 2rem;
+			width: 100%;
+		}
 	}
 `;
 const Data = styled.div`
@@ -111,15 +119,51 @@ const Data = styled.div`
 			background-color: rgba(0, 0, 0, 0.8);
 		}
 	}
+
+	@media all and (max-width: 800px) {
+		width: 100%;
+		padding-left: 2rem;
+		.title {
+			font-size: 3rem;
+		}
+		button {
+			width: 80%;
+		}
+	}
+	@media all and (max-width: 1090px) {
+		.title {
+			font-size: 5rem;
+		}
+	}
+	@media all and (max-width: 910px) {
+		.title {
+			font-size: 4rem;
+		}
+	}
 `;
 const Second = styled.div`
 	padding: 0 5rem;
-	height: 30vh;
+	margin-bottom: 5rem;
+	height: 100%;
 	font-size: 1.2rem;
 	word-spacing: 1.4px;
 	letter-spacing: 1.4px;
 	h1 {
 		font-size: 4rem;
 		font-weight: 400;
+	}
+
+	@media all and (max-width: 800px) {
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+		font-size: 1.1rem;
+		padding: 0 2rem;
+		h1 {
+			font-size: 2rem;
+			font-weight: 400;
+		}
+	}
+	@media all and (max-width: 900px) and (min-width: 800px) {
+		height: 60vh;
 	}
 `;

@@ -43,4 +43,10 @@ const Container = styled.div`
 			background-color: rgba(0, 0, 0, 0.5);
 		}
 	}
+
+	@media all and (max-width: 800px) {
+		button {
+			width: 30vw;
+		}
+	}
 `;

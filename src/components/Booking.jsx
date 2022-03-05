@@ -120,4 +120,23 @@ const Container = styled.div`
 			background-color: rgba(0, 0, 0, 0.3);
 		}
 	}
+
+	@media all and (max-width: 800px) {
+		form {
+			width: 90%;
+			height: 80%;
+			button {
+				width: 50%;
+			}
+		}
+	}
+	@media all and (max-width: 1100px) and (min-width: 800px) {
+		form {
+			width: 70%;
+			height: 50%;
+			button {
+				width: 50%;
+			}
+		}
+	}
 `;

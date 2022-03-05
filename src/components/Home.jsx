@@ -50,9 +50,25 @@ const Container = styled.div`
 		justify-content: center;
 		align-items: center;
 	}
+
+	@media all and (max-width: 800px) {
+		h1 {
+			width: 70%;
+		}
+	}
 `;
 const CardContainer = styled.div`
 	width: 100%;
 	display: grid;
 	grid-template-columns: repeat(4, 25%);
+
+	@media all and (max-width: 1244px) {
+		grid-template-columns: repeat(3, 33%);
+	}
+	@media all and (max-width: 970px) {
+		grid-template-columns: repeat(2, 50%);
+	}
+	@media all and (max-width: 800px) {
+		grid-template-columns: repeat(1, 100%);
+	}
 `;
